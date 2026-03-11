@@ -342,7 +342,7 @@ ul { list-style: none; }
 }
 .sobre__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: 60px;
   align-items: center;
 }
@@ -350,7 +350,7 @@ ul { list-style: none; }
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 125%; /* 5÷4 = 1.25 → mantém proporção 4:5 */
+  padding-bottom: 85%; /* proporção mais larga no desktop */
   border-radius: var(--radius);
   overflow: hidden;
   cursor: pointer;
@@ -601,6 +601,7 @@ ul { list-style: none; }
     max-width: 360px;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 125%; /* proporção 4:5 no celular */
   }
   .sobre__content {
     text-align: center;
